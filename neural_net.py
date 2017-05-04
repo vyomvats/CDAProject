@@ -159,7 +159,7 @@ merged_model.add(Activation('sigmoid'))
 merged_model.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])
 
 
-merged_model.fit([x1_train, x2_train, x1_train, x2_train], y=y_train, batch_size=384, epochs=1,
+merged_model.fit([x1_train, x2_train, x1_train, x2_train], y=y_train, batch_size=384, epochs=50,
                  verbose=1, validation_split=0.1, shuffle=True)
 
 # Saving the model so that it can be used later on
